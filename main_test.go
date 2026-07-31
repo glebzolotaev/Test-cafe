@@ -131,7 +131,7 @@ func TestCafeSearch(t *testing.T) {
 
 			searchLower := strings.ToLower(tc.search)
 			for _, cafeName := range cafes {
-				assert.True(t, strings.Contains(strings.ToLower(cafeName), searchLower))
+				assert.Contains(t, strings.ToLower(cafeName), searchLower)
 			}
 		})
 	}
